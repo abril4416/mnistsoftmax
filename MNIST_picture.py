@@ -6,7 +6,7 @@ mnist=input_data.read_data_sets('MNIST_data',one_hot=True)
 
 X_train=tf.placeholder(tf.float32,shape=[None,784])
 W=tf.Variable(tf.random_normal([784,10]),name='weights')
-b=tf.Variable(tf.random_normal[10],name='bias')
+b=tf.Variable(tf.random_normal([10]),name='bias')
 y_hypo=tf.matmul(X_train,W)+b
 y_label=tf.placeholder(tf.float32,shape=[None,10])
 
